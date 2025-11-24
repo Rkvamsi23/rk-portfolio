@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cleaning 2M Seller Records | RK Vamsi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="nav">
+    <div class="nav-title">RK Vamsi</div>
+    <div class="nav-links">
+      <a href="index.html">Projects</a>
+      <a href="research.html">Research agenda</a>
+    </div>
+  </div>
+</header>
+
+<main class="main article">
+  <a href="index.html" class="back-link">← Back to projects</a>
+
+  <h1>Cleaning 2M Seller Records</h1>
+  <div class="meta-pill-row">
+    <span class="meta-pill">Optiwise</span>
+    <span class="meta-pill">Python</span>
+    <span class="meta-pill">SQL</span>
+  </div>
+
+  <h2>Problem</h2>
+  <p>
+    Optiwise collects large JSON dumps from marketplaces like Amazon and Walmart. To do any serious analytics on seller performance we needed a clean, relational view instead of nested, inconsistent JSON.
+  </p>
+
+  <h2>My role</h2>
+  <ul>
+    <li>Wrote Python scripts to parse and validate seller JSON for thousands of records at a time</li>
+    <li>Designed and refined SQL tables for sellers, products, brands and categories</li>
+    <li>Migrated more than two million seller records into the new schema</li>
+    <li>Implemented checks to catch missing or inconsistent keys before load</li>
+  </ul>
+
+  <h2>Approach</h2>
+  <ul>
+    <li>Identified stable fields across different JSON versions, such as seller id, marketplace, rating, review count and category paths</li>
+    <li>Flattened nested structures into separate tables with foreign keys</li>
+    <li>Used incremental loading so that new crawls could append without breaking existing data</li>
+  </ul>
+
+  <h2>Impact</h2>
+  <ul>
+    <li>Reduced query time for common analytics questions by moving from raw JSON scans to indexed SQL tables</li>
+    <li>Enabled dashboards that show seller distribution, rating patterns and share of catalogue at scale</li>
+    <li>Gave the team a foundation to build more advanced models for seller quality and opportunity</li>
+  </ul>
+
+  <h2>Skills and tools</h2>
+  <ul>
+    <li>Python, Pandas</li>
+    <li>SQL and relational schema design</li>
+    <li>Data validation and migration for large datasets</li>
+  </ul>
+</main>
+
+<footer class="footer">
+  © <span id="year"></span> RK Vamsi
+</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
