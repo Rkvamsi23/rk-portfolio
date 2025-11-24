@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Teaching Algorithms To Write Ads | RK Vamsi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="nav">
+    <div class="nav-title">RK Vamsi</div>
+    <div class="nav-links">
+      <a href="index.html">Projects</a>
+      <a href="research.html">Research agenda</a>
+    </div>
+  </div>
+</header>
+
+<main class="main article">
+  <a href="index.html" class="back-link">← Back to projects</a>
+
+  <h1>Teaching Algorithms To Write Ads</h1>
+  <div class="meta-pill-row">
+    <span class="meta-pill">LLMs</span>
+    <span class="meta-pill">A/B testing</span>
+    <span class="meta-pill">marketing startup</span>
+  </div>
+
+  <h2>Goal</h2>
+  <p>
+    Help brands generate short form video scripts at scale while understanding what kinds of emotional narratives the system encourages when everything is optimised for performance.
+  </p>
+
+  <h2>System overview</h2>
+  <ul>
+    <li>Input product information and brand voice guidelines</li>
+    <li>Use a large language model to generate hooks, scripts and simple scene descriptions for Reels or Shorts</li>
+    <li>Push multiple variants into campaigns</li>
+    <li>Collect metrics such as view through rate and click through rate</li>
+    <li>Feed the results back into prompt templates so that later scripts are tuned by what worked before</li>
+  </ul>
+
+  <h2>My role</h2>
+  <ul>
+    <li>Worked with the product team to define what information each script needs</li>
+    <li>Designed tables for storing generated scripts, variants and campaign metrics</li>
+    <li>Built Python utilities to clean and join performance data with script metadata</li>
+    <li>Analysed which hooks and framings correlated with better metrics and shared patterns with writers and engineers</li>
+  </ul>
+
+  <h2>Tools and methods</h2>
+  <ul>
+    <li>Python and Pandas for data cleaning and analysis</li>
+    <li>SQL for querying campaign data</li>
+    <li>A/B testing to compare different hook strategies</li>
+  </ul>
+
+  <h2>What we saw</h2>
+  <ul>
+    <li>Hooks built around urgency, discounts or strong claims generally outperformed slower, more subtle stories</li>
+    <li>Scripts that left room for ambiguity or build up underperformed, at least on the short metrics we tracked</li>
+    <li>Over time this pushed the system toward a narrow emotional range: high energy, fast moving, low ambiguity</li>
+  </ul>
+
+  <h2>Why it matters</h2>
+  <p>
+    The work made me see these tools not just as creative assistants but as infrastructures that quietly shape which emotional experiences are cheap and scalable. This observation now sits at the centre of my research questions about humour and algorithmic curation.
+  </p>
+</main>
+
+<footer class="footer">
+  © <span id="year"></span> RK Vamsi
+</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
