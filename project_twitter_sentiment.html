@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Watching Twitter Turn During Events | RK Vamsi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="nav">
+    <div class="nav-title">RK Vamsi</div>
+    <div class="nav-links">
+      <a href="index.html">Projects</a>
+      <a href="research.html">Research agenda</a>
+    </div>
+  </div>
+</header>
+
+<main class="main article">
+  <a href="index.html" class="back-link">← Back to projects</a>
+
+  <h1>Watching Twitter Turn During Events</h1>
+  <div class="meta-pill-row">
+    <span class="meta-pill">Python</span>
+    <span class="meta-pill">NLP</span>
+    <span class="meta-pill">Power BI</span>
+  </div>
+
+  <h2>Goal</h2>
+  <p>
+    Build a small pipeline to see how sentiment and topics on Twitter (now X) shift during a live event, and how quickly the crowd mood can turn.
+  </p>
+
+  <h2>Pipeline</h2>
+  <ul>
+    <li>Streamed tweets with selected keywords and hashtags using the Twitter API</li>
+    <li>Cleaned and normalised the text</li>
+    <li>Applied basic sentiment analysis and simple topic grouping</li>
+    <li>Stored results with timestamps for later analysis</li>
+    <li>Built a Power BI dashboard to visualise sentiment and topic share over time</li>
+  </ul>
+
+  <h2>Interesting patterns</h2>
+  <ul>
+    <li>Sharp sentiment swings around key announcements or controversial moments</li>
+    <li>Topic clusters forming and dissolving as memes spread</li>
+    <li>Small but loud negative clusters that shaped the feeling of the feed out of proportion to their size</li>
+  </ul>
+
+  <h2>Skills used</h2>
+  <ul>
+    <li>Python for data collection and processing</li>
+    <li>Simple NLP, tokenisation and sentiment scoring</li>
+    <li>Power BI for interactive visualisation</li>
+  </ul>
+
+  <h2>Why it matters for my current work</h2>
+  <p>
+    This was my first experience watching text as a moving crowd in real time. Later, when I started thinking about stand up clips and platform algorithms, this project gave me a mental model for how public mood can flip fast and how a single joke can become a flashpoint.
+  </p>
+</main>
+
+<footer class="footer">
+  © <span id="year"></span> RK Vamsi
+</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
